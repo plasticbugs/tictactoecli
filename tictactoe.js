@@ -30,8 +30,8 @@ var TicTacToe = function() {
       }
     }
     // check diagonals
-    solutions[6] = [board[0][0], board[1][1], board[2][2]]
-    solutions[7] = [board[0][2], board[1][1], board[2][0]]
+    solutions.push([board[0][0], board[1][1], board[2][2]]);
+    solutions.push([board[0][2], board[1][1], board[2][0]]);
     solutions = solutions.map(rowCol => {
       return rowCol.join('');
     })
